@@ -27,7 +27,7 @@ stages:
         restoreSolution: '$(solutionName)'
     - task: android-manifest-version@1
       inputs:
-        sourcePath: 'Cryptollet.Android/Properties/AndroidManifest.xml'
+        sourcePath: 'Cryptollet/Cryptollet.Android/Properties/AndroidManifest.xml'
         versionCodeOption: 'buildid'
         versionCode: '$(Build.BuildId)'
         printFile: true
