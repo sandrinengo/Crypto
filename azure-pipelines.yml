@@ -42,3 +42,12 @@ jobs:
       packageApp: false
       buildForSimulator: true
       runNugetRestore: false
+
+- job: runTests
+  displayName: 'Run unit test'
+  steps:
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: 'test'
+      projects: "Cryptollet.Test/Cryptollet.Tests.csprj"
+      configuration: '$(buildConfiguration)'
