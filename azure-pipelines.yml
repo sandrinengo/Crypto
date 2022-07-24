@@ -10,7 +10,7 @@ variables:
   outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
   solutionName: 'Cryptollet.sln'
   androidProject: 'Cryptollet.Android/Cryptollet.Android.csproj'
-
+  
 steps:
   - task: NuGetToolInstaller@1
   - task: NuGetCommand@2
