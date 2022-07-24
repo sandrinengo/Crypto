@@ -35,7 +35,7 @@ jobs:
   - task: NuGetCommand@2
     inputs:
       restoreSolution: '$(solutionName)'
-  - task: XamariniOS@1
+  - task: XamariniOS@2
     inputs:
       solutionFile: '$(solutionName)'
       configuration: '$(buildConfiguration)'
